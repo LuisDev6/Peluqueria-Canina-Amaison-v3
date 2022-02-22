@@ -1,0 +1,87 @@
+/* Reseteo del CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Carga de un fonts */
+@font-face {
+  font-family: Lobster;
+  src: url("/fonts/Lobster/Lobster.ttf") format("truetype"); }
+
+/* RESPONSIVE DESIGN DESCKTOP */
+/* Estilos Generales */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+/* ESTILOS HEADER */
+.header {
+  background-image: linear-gradient(to right, #FFCDDD, #B762C1); }
+
+.logoNav img {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px; }
+
+.nav {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: nowrap; }
+  .nav .menu li {
+    margin: 0px 5px; }
+    .nav .menu li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 25px;
+      display: block;
+      text-transform: uppercase;
+      padding: 7px 10px;
+      border-radius: 8px; }
+      .nav .menu li a:hover {
+        background-color: #FFE6E6;
+        border-radius: 5px; }
+  .nav .li--aResaltado {
+    background-color: #6155A6;
+    border-radius: 5px; }
+
+/* USANDO BOOTSTRAP PARA EL INDEX Y LA SECCION "NOSOTROS" */
+.h1Main {
+  font-family: Lobster, 'lobster', Arial, Helvetica, sans-serif;
+  background-color: #f3e6cf;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.h2Main {
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+  text-align: center; }
+
+.pInicio {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.aside__image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.form--fondo {
+  background-color: #f3e6cf; }
+
+.iframe__ubicacion {
+  margin-top: 50px;
+  border: #6155A6 solid;
+  margin: auto; }
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background-color: #f3e6cf;
+  margin-top: auto;
+  text-align: center; }
