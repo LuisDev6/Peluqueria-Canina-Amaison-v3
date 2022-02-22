@@ -1,7 +1,6 @@
 {
   "name": "peluqueria-canina-amaison",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuisDev6/Peluqueria-Canina-Amaison-v1.git"
+    "url": "git+https://github.com/LuisDev6/Peluqueria-Canina-Amaison-v3.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LuisDev6/Peluqueria-Canina-Amaison-v1/issues"
+    "url": "https://github.com/LuisDev6/Peluqueria-Canina-Amaison-v3/issues"
   },
-  "homepage": "https://github.com/LuisDev6/Peluqueria-Canina-Amaison-v1#readme",
+  "homepage": "https://github.com/LuisDev6/Peluqueria-Canina-Amaison-v3#readme",
+  "description": "",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"

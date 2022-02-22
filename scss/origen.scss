@@ -1,71 +1,26 @@
 @import "base";
-
-/* RESPONSIVE DESIGN DESCKTOP */
-/* Estilos Generales */
-
-body{
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
-
-}
-
-/* ESTILOS HEADER */
-.header{
-    background-image: linear-gradient(to right, #FFCDDD ,#B762C1);  
-}
+@import "body";
+@import "header";
 
 
-.logoNav img{
-    width: 150px;
-    height: 150px;
-    margin-left: 20px;
-}
 
-.nav{
-    font-family: Arial, Helvetica, sans-serif;
-    flex-wrap: nowrap;
-
-    .menu{
-        li{
-            margin: 0px 5px;
-            a{
-                text-decoration: none;
-                color: white;
-                font-weight: bold;
-                font-size: 25px;
-                display: block;
-                text-transform: uppercase;
-                padding: 7px 10px;
-                border-radius: 8px;
-                &:hover{
-                    background-color: #FFE6E6;
-                    border-radius: 5px;
-                }
-            }
-        }
-    }
-    .li--aResaltado{
-        background-color: #6155A6;
-        border-radius: 5px;
-}
-}
-
-
-/* USANDO BOOTSTRAP PARA EL INDEX Y LA SECCION "NOSOTROS" */
-
- 
-.h1Main{
+/* Uso de mixin */
+@mixin titulos($fondo, $margeninf) {
     font-family: Lobster, 'lobster', Arial, Helvetica, sans-serif;
-    background-color:rgb(243, 230, 207);
     text-align: center;
-    margin-bottom: 20px;
-}
-.h2Main{
-    font-family: Lobster, Arial, Helvetica, sans-serif;
-    text-align: center;
+    margin-bottom: $margeninf;
+    background-color:$fondo;
 }
 
+  /* Estilos del h1 */
+.h1Main{
+    @include titulos(rgb(243, 230, 207),20px);
+}
+ /* Estilos del h2 */
+.h2Main{
+    @include titulos(white,20px);
+}
+ /* Estilos del parrafo del inicio */
 .pInicio{
     font-size: 20px;
     text-align: center;
@@ -73,6 +28,12 @@ body{
     margin-right: 50px;
 }
 
+/* Uso del extend para un parrafo */
+.pNosotros{
+  @extend .pInicio;
+  font-size: 26px;
+} 
+ /* Estilos imagenes del aside */
 .aside__image{
     display: block;
     max-width: 100%;
@@ -81,10 +42,11 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+ /* Estilos del formulario */
 .form--fondo{
     background-color:rgb(243, 230, 207);
 }
-
+ /* Estilos del Iframe con google maps */
 .iframe__ubicacion{
     margin-top: 50px;
     border:#6155A6 solid;
